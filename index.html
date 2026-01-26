@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País Vasco</title>
+    <meta name="description"
+        content="En esta página aparecen las mejores rutas que podrás hacer por el País Vasco. Animate!!!">
+    <meta name="author" content="Lierni Sarraoa Joaquin">
+    <link rel="icon" type="image/x-icon" href="img/ikurrina.png">
+
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts - Roboto y Montserrat -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body class="bg-light">
+    <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm px-3">
+        <div class="container-fluid justify-content-between">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="img/ikurrina.png" alt="Ikurriña" width="32" height="32" class="me-2">
+                <span class="fw-bold">INICIO</span>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="nav nav-underline fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link px-3 link-success text-dark" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 link-success text-dark" href="rutas.html">RUTAS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3 link-success text-dark" href="contacto.html">CONTACTO</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="position-relative overflow-hidden w-100 vh-100 bg-dark text-white shadow">
+            <img src="img/fondo1.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50">
+            <div class="position-absolute top-50 start-50 translate-middle text-center w-100 px-3">
+                <h1 class="display-1 fw-bold mb-4 shadow-lg" style="font-family: 'Montserrat', sans-serif;">RUTAS DEL
+                    PAÍS VASCO</h1>
+                <a href="rutas.html"
+                    class="btn btn-danger btn-lg px-5 py-3 rounded-pill fw-bold text-uppercase shadow-lg border-0 transform"
+                    onmouseover="this.classList.add('bg-success')"
+                    onmouseout="this.classList.remove('bg-success')">EXPLORA LAS RUTAS</a>
+            </div>
+        </div>
+
+        <div class="container py-5 text-center">
+            <h2 class="display-5 fw-bold mb-5" style="font-family: 'Montserrat', sans-serif;">Sumérgete en las
+                experiencias únicas del País Vasco</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-12 col-md-4">
+                    <article class="h-100 border border-dark p-3 bg-white shadow-sm">
+                        <h3 class="fw-bold mb-3">GASTRONOMÍA</h3>
+                        <p class="text-secondary small">Descubre los productos locales más auténticos en una ruta que
+                            despierta el paladar.
+                            Un paseo corto, pero lleno de aromas, colores y tradición.
+                            ¿Te animas a saborear el territorio?</p>
+                        <img src="img/index_gastronomia.png" class="img-fluid rounded w-100" height="250">
+                    </article>
+                </div>
+                <div class="col-12 col-md-4">
+                    <article class="h-100 border border-dark p-3 bg-white shadow-sm d-flex flex-column">
+                        <img src="img/index_naturaleza.png" class="img-fluid rounded mb-3 w-100" height="250">
+                        <h3 class="fw-bold mb-3">NATURALEZA</h3>
+                        <p class="text-secondary small">Camina entre acantilados y brisa marina.
+                            Esta ruta te conecta con la belleza natural sin complicaciones: corta, accesible y perfecta
+                            para desconectar.
+                            La naturaleza te espera a solo unos pasos.</p>
+                    </article>
+                </div>
+                <div class="col-12 col-md-4">
+                    <article class="h-100 border border-dark p-3 bg-white shadow-sm">
+                        <h3 class="fw-bold mb-3">CULTURA</h3>
+                        <p class="text-secondary small">Sumérgete en la esencia local con una ruta corta que te lleva
+                            por tradiciones, arquitectura y
+                            relatos que aún resuenan.
+                            Ideal para dejarte sorprender sin prisas.
+                            ¿Te vienes a descubrir lo que no se ve a simple vista?</p>
+                        <img src="img/index_cultura.png" class="img-fluid rounded w-100" height="250">
+                    </article>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal RGPD Bootstrap -->
+        <div class="modal fade shadow" id="avisoLegal" tabindex="-1" aria-labelledby="avisoLegalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content shadow-lg p-4 text-center border-0">
+                    <h2 class="modal-title fw-bold mb-3" id="avisoLegalLabel">Aviso Legal y RGPD</h2>
+                    <p class="text-muted">
+                        Aviso legal, política de privacidad y política de cookies.
+                        Por favor, acepta para continuar.
+                    </p>
+                    <button type="button"
+                        class="btn btn-danger btn-lg rounded-pill fw-bold text-uppercase mt-3 mx-auto shadow"
+                        id="aceptarBtn" data-bs-dismiss="modal">Aceptar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="container-fluid py-5 bg-danger text-white mt-5 shadow-lg">
+        <div class="row px-md-5">
+            <div class="col-12 col-lg-8 mb-4 mb-lg-0">
+                <a href="index.html" class="d-block text-white text-decoration-none fw-bold mb-2">INICIO</a>
+                <a href="rutas.html" class="d-block text-white text-decoration-none fw-bold mb-2">RUTAS</a>
+                <a href="contacto.html" class="d-block text-white text-decoration-none fw-bold mb-2">CONTACTO</a>
+            </div>
+            <div class="col-12 col-lg-4 text-lg-end">
+                <p class="h5 mb-2 fw-bold">CONTACTANOS</p>
+                <p class="mb-4">rutasPaisVasco@gmail.com</p>
+                <div class="d-flex justify-content-lg-end gap-3 px-3 px-md-0">
+                    <a href="https://www.facebook.com/"><img src="img/facebook.png" width="32" height="32"
+                            class="opacity-75 hover-opacity-100 shadow-sm"></a>
+                    <a href="https://www.instagram.com/"><img src="img/instagram.png" width="32" height="32"
+                            class="opacity-75 hover-opacity-100 shadow-sm"></a>
+                    <a href="http://www.x.com"><img src="img/twitter.png" width="32" height="32"
+                            class="opacity-75 hover-opacity-100 shadow-sm"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
