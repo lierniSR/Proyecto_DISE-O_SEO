@@ -29,7 +29,7 @@
 </head>
 
 <body class="bg-light">
-    <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm px-3">
+    <header class="navbar navbar-expand-lg navbar-light bg-white border-bottom shadow-sm px-3" role="banner">
         <div class="container-fluid justify-content-between">
             <div class="navbar-brand d-flex align-items-center">
                 <img src="img/ikurrina.png" alt="Ikurriña" width="32" height="32" class="me-2">
@@ -37,14 +37,15 @@
             </div>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Abrir menú de navegación">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
-            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <nav class="collapse navbar-collapse justify-content-end" id="navbarNav" role="navigation"
+                aria-label="Menú principal">
                 <ul class="nav nav-underline fw-bold">
                     <li class="nav-item">
-                        <a class="nav-link px-3 link-success text-dark" href="index.html">INICIO</a>
+                        <a class="nav-link px-3 link-success text-dark" href="index.html" aria-current="page">INICIO</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link px-3 link-success text-dark" href="rutas.html">RUTAS</a>
@@ -57,7 +58,7 @@
         </div>
     </header>
 
-    <main>
+    <main role="main">
         <div class="position-relative overflow-hidden w-100 vh-100 bg-dark text-white shadow">
             <img src="img/fondo1.png" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover opacity-50"
                 alt="Fondo principal">
@@ -66,7 +67,7 @@
                     PAÍS VASCO</h1>
                 <a href="rutas.html"
                     class="btn btn-danger btn-lg px-5 py-3 rounded-pill fw-bold text-uppercase shadow-lg border-0 transform"
-                    onmouseover="this.classList.add('bg-success')"
+                    aria-label="Explorar rutas del País Vasco" onmouseover="this.classList.add('bg-success')"
                     onmouseout="this.classList.remove('bg-success')">EXPLORA LAS RUTAS</a>
             </div>
         </div>
@@ -89,7 +90,7 @@
                 <div class="col-12 col-md-4">
                     <article class="h-100 border border-dark p-3 bg-white shadow-sm d-flex flex-column">
                         <img src="img/index_naturaleza.png" class="img-fluid rounded mb-3 w-100" height="250"
-                            alt="naturaleza">
+                            alt="Naturaleza">
                         <h3 class="fw-bold mb-3">NATURALEZA</h3>
                         <p class="text-secondary small">Camina entre acantilados y brisa marina.
                             Esta ruta te conecta con la belleza natural sin complicaciones: corta, accesible y perfecta
@@ -113,7 +114,7 @@
 
         <!-- Modal RGPD Bootstrap -->
         <div class="modal fade shadow" id="avisoLegal" tabindex="-1" aria-labelledby="avisoLegalLabel"
-            aria-hidden="true">
+            aria-hidden="true" role="dialog" aria-modal="true">
             <div class="modal-dialog modal-dialog-centered">
                 <div class="modal-content shadow-lg p-4 text-center border-0">
                     <h2 class="modal-title fw-bold mb-3" id="avisoLegalLabel">Aviso Legal y RGPD</h2>
@@ -123,13 +124,13 @@
                     </p>
                     <button type="button"
                         class="btn btn-danger btn-lg rounded-pill fw-bold text-uppercase mt-3 mx-auto shadow"
-                        id="aceptarBtn" data-bs-dismiss="modal">Aceptar</button>
+                        id="aceptarBtn" data-bs-dismiss="modal" aria-label="Aceptar aviso legal">Aceptar</button>
                 </div>
             </div>
         </div>
     </main>
 
-    <footer class="container-fluid py-5 bg-danger text-white mt-5 shadow-lg">
+    <footer class="container-fluid py-5 bg-danger text-white mt-5 shadow-lg" role="contentinfo">
         <div class="row px-md-5">
             <div class="col-12 col-lg-8 mb-4 mb-lg-0">
                 <a href="index.html" class="d-block text-white text-decoration-none fw-bold mb-2">INICIO</a>
@@ -140,12 +141,18 @@
                 <p class="p6 mb-2 fw-bold">CONTACTANOS</p>
                 <p class="mb-4">rutasPaisVasco@gmail.com</p>
                 <div class="d-flex justify-content-lg-end gap-3 px-3 px-md-0">
-                    <a href="https://www.facebook.com/"><img src="img/facebook.png" width="32" height="32"
-                            class="opacity-75 hover-opacity-100 shadow-sm" alt="Imagen de Facebook"></a>
-                    <a href="https://www.instagram.com/"><img src="img/instagram.png" width="32" height="32"
-                            class="opacity-75 hover-opacity-100 shadow-sm" alt="Imagen de Instagram"></a>
-                    <a href="http://www.x.com"><img src="img/twitter.png" width="32" height="32"
-                            class="opacity-75 hover-opacity-100 shadow-sm" alt="Imagen de Twitter"></a>
+                    <a href="https://www.facebook.com/" aria-label="Ir a Facebook">
+                        <img src="img/facebook.png" width="32" height="32"
+                            class="opacity-75 hover-opacity-100 shadow-sm" alt="Facebook">
+                    </a>
+                    <a href="https://www.instagram.com/" aria-label="Ir a Instagram">
+                        <img src="img/instagram.png" width="32" height="32"
+                            class="opacity-75 hover-opacity-100 shadow-sm" alt="Instagram">
+                    </a>
+                    <a href="http://www.x.com" aria-label="Ir a Twitter/X">
+                        <img src="img/twitter.png" width="32" height="32" class="opacity-75 hover-opacity-100 shadow-sm"
+                            alt="Twitter/X">
+                    </a>
                 </div>
             </div>
         </div>
