@@ -5,3 +5,23 @@
     --rojoOscuro: #C62828;
     --fondoMedio: lightblue;
 }
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/OpenDyslexic-Regular.woff2') format('woff2'),
+        url('../fonts/OpenDyslexic-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OpenDyslexic';
+    src: url('../fonts/OpenDyslexic-Bold.woff2') format('woff2'),
+        url('../fonts/OpenDyslexic-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+* {
+    font-family: 'OpenDyslexic', sans-serif;
+}
