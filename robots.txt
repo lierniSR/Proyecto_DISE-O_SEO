@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://liernisr.github.io/Proyecto_DISE-O_SEO/sitemap.xml
